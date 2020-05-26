@@ -33,6 +33,3 @@ runs:
     - '--filter=${{ inputs.filter }}'
     - '--regex=${{ inputs.regex }}'
     - '--tag=${{ inputs.tag }}'
-    - '--build-arg=${{ inputs.buildArg }}'
-    - '--build-label=${{ inputs.buildLabel }}'
-    - '--build-option=${{ inputs.buildOption }}'

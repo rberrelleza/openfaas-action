@@ -25,7 +25,7 @@ inputs:
     default: "stack.yml"
 runs:
   using: 'docker'
-  image: 'docker://openfaas/faas-cli:0.9.2'
+  image: 'docker://openfaas/faas-cli:0.12.4'
   args:
     - 'faas-cli'
     - 'build'
@@ -34,3 +34,6 @@ runs:
     - '--filter=${{ inputs.filter }}'
     - '--regex=${{ inputs.regex }}'
     - '--tag=${{ inputs.tag }}'
+    - '--build-arg=${{ inputs.buildArg'
+    - '--build-label=${{ inputs.buildLabel'
+    - '--build-option=${{ inputs.buildOption'
